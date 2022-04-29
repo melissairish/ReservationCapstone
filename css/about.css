@@ -1,0 +1,5 @@
+.about .video-box {
+    background: url("../images/about-bg.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+  }
