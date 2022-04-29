@@ -125,7 +125,7 @@ include('../includes/dbcon.php');
       
                       <tr>
                       <td><?php echo $id;?></td>
-                      <td><img style="height:50px;width:50px" src="#sad"></td>
+                      <td><img style="height:50px;width:50px" src="../images/menu/<?php echo $pname;?>.png"></td>
                         <td><?php echo $pname;?></td>
                         <td><?php echo $pprice;?></td>
                         <td><?php echo $pdesc;?></td>
