@@ -11,7 +11,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/logo2.png" type="">
-  <title> Piggy Wings </title>
+  <title> Piggy Wings Restaurant </title>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="css/footer.css" />
