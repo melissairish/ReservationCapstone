@@ -48,24 +48,36 @@
   
       <div class="filters-content">
 
+
+      <?php
+
+            $queryp=mysqli_query($con,"select * from pmenu")or die(mysqli_error($con));
+            while ($rowp=mysqli_fetch_array($queryp)){
+
+              $pname=$rowp['pname'];
+							$pprice=$rowp['pprice'];
+							$pdesc=$rowp['pdesc'];      
+      ?>
       
+
+
         <div class="row grid">
           <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="images/f1.png" alt="">
+                  <img src="images/menu/<?php echo $pname;?>.png" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pizza
+                   <?php echo $pname; ?>
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                  <?php echo $pdesc; ?>
                   </p>
                   <div class="options">
                     <h6>
-                      $20
+                    <?php echo "₱".$pprice; ?>
                     </h6>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -126,13 +138,14 @@
               </div>
             </div>
           </div>
-        </div>
+          </div>
 
-      <div class="btn-box">
-        <a href="">
-          View More
-        </a>
-      </div>
-    </div>
+          <?php } ?>
+              
+
+
+
+
+      
   </section>
 

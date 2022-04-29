@@ -25,7 +25,7 @@ if (isset($_POST['create'])) {
     if(in_array($fileActualExt,$allowed)){
         if($fileError === 0){
             if($fileSize < 1000000){
-                $fileNameNew = uniqid('', true).".".$fileActualExt;
+                $fileNameNew = $pname.".png";
                 $fileDestination = "../images/menu/".$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
                 
